@@ -21,17 +21,10 @@
     <meta name="keywords" content="дом быта октябрьский, ремонт телефонов октябрьский, ремонт обуви октябрьский, ателье Октябрьский, ключи октябрьский, фото на документы октябрьский, печать документов октябрьский, ксерокопия октябрьский, ламинирование октябрьский, химчистка октябрьский, починить телефон Октябрьский, сделать ключ Октябрьский, фото на паспорт Октябрьский">
     
     <!-- УЛУЧШЕННЫЙ FAVICON С БУКВАМИ ОР (Остров Ремонта) -->
-    <!-- Основная ико нка для всех браузеров -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238b5cf6'/><text x='50' y='65' text-anchor='middle' font-family='Arial, sans-serif' font-size='50' font-weight='bold' fill='white'>ОР</text></svg>">
-    
-    <!-- Для iOS и Android -->
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238b5cf6'/><text x='50' y='65' text-anchor='middle' font-family='Arial, sans-serif' font-size='50' font-weight='bold' fill='white'>ОР</text></svg>">
-    
-    <!-- Цвет темы браузера (фиолетовый) -->
     <meta name="theme-color" content="#8b5cf6">
     <meta name="msapplication-TileColor" content="#8b5cf6">
-    
-    <!-- Для Windows и старых браузеров -->
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238b5cf6'/><text x='50' y='65' text-anchor='middle' font-family='Arial, sans-serif' font-size='50' font-weight='bold' fill='white'>ОР</text></svg>" type="image/x-icon">
     
     <!-- Schema.org микроразметка для LocalBusiness -->
@@ -55,7 +48,7 @@
             "latitude": 55.606883,
             "longitude": 37.969838
         },
-        "url": "https://ostrov-remonta.ru",
+        "url": "https://ostrov-remonta.github.io",
         "telephone": "+79999295161",
         "priceRange": "₽₽",
         "openingHours": "Mo-Sa 10:00-20:00",
@@ -108,11 +101,11 @@
     <meta property="og:description" content="Ремонт телефонов, обуви, одежды, изготовление ключей, фото на документы, печать документов, ксерокопия, ламинирование, химчистка в Октябрьском. Ул. Текстильщиков, 7А (Дикси).">
     <meta property="og:image" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ostrov-remonta.ru">
+    <meta property="og:url" content="https://ostrov-remonta.github.io">
     <meta property="og:locale" content="ru_RU">
     
     <!-- Каноническая ссылка -->
-    <link rel="canonical" href="https://ostrov-remonta.ru">
+    <link rel="canonical" href="https://ostrov-remonta.github.io">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -121,8 +114,8 @@
                 extend: {
                     colors: {
                         graphite: '#1f2933',
-                        accent: '#8b5cf6', // Фиолетовый
-                        accent2: '#a78bfa'  // Светло-фиолетовый
+                        accent: '#8b5cf6',
+                        accent2: '#a78bfa'
                     }
                 }
             }
@@ -304,6 +297,34 @@
                 padding: 0 30px;
             }
         }
+
+        .price-list {
+            margin-top: 12px;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 12px;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            padding: 4px 0;
+            border-bottom: 1px dashed #f0f0f0;
+        }
+
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-name {
+            color: #4b5563;
+        }
+
+        .price-value {
+            font-weight: 700;
+            color: #8b5cf6;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-gray-50 via-white to-purple-50 text-graphite font-semibold">
@@ -443,85 +464,234 @@
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-extrabold mb-12">Наши услуги в Октябрьском</h2>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ремонт телефонов -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="smartphone" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Ремонт телефонов</h3>
-                    <p class="text-sm text-gray-600">Смартфоны, планшеты, электроника</p>
+                    <p class="text-sm text-gray-600 mb-3">Смартфоны, планшеты, электроника</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Замена разъема зарядки</span>
+                            <span class="price-value">от 1000 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Замена дисплея</span>
+                            <span class="price-value">от 1500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Чистка телефона</span>
+                            <span class="price-value">300 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 15 мин</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">качество</span>
                     </div>
                 </div>
                 
+                <!-- Батарейки в часах -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="watch" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Батарейки в часах</h3>
-                    <p class="text-sm text-gray-600">Быстрая замена любых типов</p>
+                    <p class="text-sm text-gray-600 mb-3">Быстрая замена любых типов</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Замена батарейки</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Батарейки в наличии</span>
+                            <span class="price-value">от 100 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 5 мин</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">аккуратно</span>
                     </div>
                 </div>
                 
+                <!-- Ремонт обуви -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="footprints" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Ремонт обуви</h3>
-                    <p class="text-sm text-gray-600">Каблуки, подошвы, реставрация</p>
+                    <p class="text-sm text-gray-600 mb-3">Каблуки, подошвы, реставрация</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Ремонт обуви</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Сложный ремонт</span>
+                            <span class="price-value">от 1000 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">в день</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">надёжно</span>
                     </div>
                 </div>
                 
+                <!-- Ателье -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="scissors" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Ателье</h3>
-                    <p class="text-sm text-gray-600">Ремонт и подгонка одежды</p>
+                    <p class="text-sm text-gray-600 mb-3">Ремонт и подгонка одежды</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Ремонт одежды</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Подгонка по фигуре</span>
+                            <span class="price-value">от 500 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 30 мин</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">качество</span>
                     </div>
                 </div>
                 
+                <!-- Фото на документы -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="camera" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Фото на документы</h3>
-                    <p class="text-sm text-gray-600">Быстро и официально</p>
+                    <p class="text-sm text-gray-600 mb-3">Быстро и официально</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Фото на документы</span>
+                            <span class="price-value">400 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">15 мин</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">чётко</span>
                     </div>
                 </div>
                 
+                <!-- Изготовление ключей -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="key" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Изготовление ключей</h3>
-                    <p class="text-sm text-gray-600">Квартирные и офисные</p>
+                    <p class="text-sm text-gray-600 mb-3">Квартирные, офисные, домофонные</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Английский ключ</span>
+                            <span class="price-value">250 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Флажковый (сувальдный)</span>
+                            <span class="price-value">350 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Вертикальный ключ</span>
+                            <span class="price-value">350 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Домофон "Даллас"</span>
+                            <span class="price-value">350 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Домофон "Цифрал"</span>
+                            <span class="price-value">500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Домофон Em-Marine</span>
+                            <span class="price-value">350 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 5 мин</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">точно</span>
                     </div>
                 </div>
 
-                <!-- НОВАЯ УСЛУГА 1: Печать документов, ксерокопия, ламинирование -->
+                <!-- Печать документов, ксерокопия, ламинирование -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="printer" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Печать документов</h3>
-                    <p class="text-sm text-gray-600">Ксерокопия, ламинирование, распечатка</p>
+                    <p class="text-sm text-gray-600 mb-3">Ксерокопия, ламинирование, распечатка</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Распечатка ч/б (A4)</span>
+                            <span class="price-value">20 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Цветная копия (A4)</span>
+                            <span class="price-value">30-50 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Цветная на фотобумаге A4</span>
+                            <span class="price-value">150 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Фото 10×15 на фотобумаге</span>
+                            <span class="price-value">50 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 2 мин</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">доступно</span>
                     </div>
                 </div>
 
-                <!-- НОВАЯ УСЛУГА 2: Химчистка -->
+                <!-- Химчистка + Аксессуары -->
                 <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
                     <i data-lucide="droplets" class="w-12 h-12 text-accent mb-4"></i>
                     <h3 class="font-bold text-lg mb-2">Химчистка</h3>
-                    <p class="text-sm text-gray-600">Чистка одежды и деликатных тканей</p>
+                    <p class="text-sm text-gray-600 mb-3">Чистка одежды и деликатных тканей</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Химчистка одежды</span>
+                            <span class="price-value">от 500 ₽</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Кабель/аксессуары</span>
+                            <span class="price-value">от 300 ₽</span>
+                        </div>
+                    </div>
+                    
                     <div class="mt-4 flex gap-2">
                         <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 1 дня</span>
                         <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">качественно</span>
+                    </div>
+                </div>
+
+                <!-- Ремонт компьютеров и ноутбуков -->
+                <div class="border-2 border-accent rounded-2xl p-6 bg-white hover:shadow-2xl transition-shadow">
+                    <i data-lucide="laptop" class="w-12 h-12 text-accent mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Ремонт компьютеров</h3>
+                    <p class="text-sm text-gray-600 mb-3">Ноутбуки, ПК, диагностика</p>
+                    
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="price-name">Диагностика</span>
+                            <span class="price-value">бесплатно</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-name">Ремонт</span>
+                            <span class="price-value">от 1500 ₽</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 flex gap-2">
+                        <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">от 1 часа</span>
+                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">профессионально</span>
                     </div>
                 </div>
             </div>
@@ -548,7 +718,7 @@
                     <p class="text-sm text-gray-500">Быстрый ремонт</p>
                 </div>
                 <div class="text-center p-6 bg-white rounded-2xl shadow-lg">
-                    <div class="text-5xl font-bold text-accent mb-3">8</div>
+                    <div class="text-5xl font-bold text-accent mb-3">9</div>
                     <p class="text-gray-700 font-semibold">услуг</p>
                     <p class="text-sm text-gray-500">В одном месте</p>
                 </div>
@@ -566,17 +736,53 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Фото на документы мы делаем за 15-20 минут. Все фотографии соответствуют официальным требованиям, их можно использовать для любых документов.</p>
+                        <p class="text-gray-600">Фото на документы мы делаем за 15-20 минут. Все фотографии соответствуют официальным требованиям, их можно использовать для любых документов. Стоимость — 400 ₽ за любой формат.</p>
                     </div>
                 </div>
                 
                 <div class="border border-gray-200 rounded-xl overflow-hidden">
                     <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Можно ли сделать ключ от автомобиля?</span>
+                        <span>Сколько стоят ключи?</span>
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Да, мы изготавливаем ключи от автомобилей.</p>
+                        <p class="text-gray-600">
+                            • Английский ключ — 250 ₽<br>
+                            • Флажковый (сувальдный) — 350 ₽<br>
+                            • Вертикальный ключ — 350 ₽<br>
+                            • Домофон "Даллас" — 350 ₽<br>
+                            • Домофон "Цифрал" — 500 ₽<br>
+                            • Домофон Em-Marine — 350 ₽
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
+                        <span>Сколько стоит ремонт телефона?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 bg-white">
+                        <p class="text-gray-600">
+                            • Замена разъема зарядки — от 1000 ₽<br>
+                            • Замена дисплея — от 1500 ₽<br>
+                            • Чистка телефона — 300 ₽
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
+                        <span>Сколько стоит распечатка?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 bg-white">
+                        <p class="text-gray-600">
+                            • Распечатка ч/б (A4) — 20 ₽<br>
+                            • Цветная копия (A4) — 30-50 ₽<br>
+                            • Цветная на фотобумаге A4 — 150 ₽<br>
+                            • Фото 10×15 на фотобумаге — 50 ₽
+                        </p>
                     </div>
                 </div>
                 
@@ -592,63 +798,21 @@
                 
                 <div class="border border-gray-200 rounded-xl overflow-hidden">
                     <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Можно ли отремонтировать сумку или рюкзак?</span>
+                        <span>Сколько стоит химчистка?</span>
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Да, в нашем ателье мы ремонтируем не только одежду, но и различные аксессуары: сумки, рюкзаки, кошельки и другие изделия из кожи и ткани.</p>
+                        <p class="text-gray-600">Химчистка одежды — от 500 ₽, зависит от типа изделия и сложности. Точную цену скажет мастер после осмотра.</p>
                     </div>
                 </div>
                 
                 <div class="border border-gray-200 rounded-xl overflow-hidden">
                     <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Какие документы нужны для ремонта телефона?</span>
+                        <span>Вы ремонтируете компьютеры и ноутбуки?</span>
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Для ремонта телефона не нужны никакие документы. Достаточно принести само устройство. Мы работаем быстро и без лишних формальностей.</p>
-                    </div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Есть ли у вас в наличии батарейки для часов?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                    </button>
-                    <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">У нас большой выбор батареек для часов различных типов и размеров. Если нужной батарейки не окажется в наличии, мы можем быстро её заказать.</p>
-                    </div>
-                </div>
-                
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Вы ремонтируете планшеты и ноутбуки?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                    </button>
-                    <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Да, мы ремонтируем не только телефоны, но и планшеты, ноутбуки, а также другую электронную технику. Приносите свою технику, и мы её починим.</p>
-                    </div>
-                </div>
-
-                <!-- НОВЫЙ ВОПРОС: про печать и ксерокопию -->
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Делаете ли вы ксерокопии и печать документов?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                    </button>
-                    <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Да, мы предоставляем услуги печати документов, ксерокопирования и ламинирования. Это быстро и недорого. Обращайтесь!</p>
-                    </div>
-                </div>
-
-                <!-- НОВЫЙ ВОПРОС: про химчистку -->
-                <div class="border border-gray-200 rounded-xl overflow-hidden">
-                    <button class="faq-question w-full text-left p-6 bg-gray-50 hover:bg-gray-100 flex justify-between items-center font-bold transition-colors">
-                        <span>Вы принимаете вещи в химчистку?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
-                    </button>
-                    <div class="faq-answer hidden p-6 bg-white">
-                        <p class="text-gray-600">Да, мы принимаем одежду и другие изделия в химчистку. Чистка выполняется качественно и в срок. Сроки выполнения уточняйте у мастера.</p>
+                        <p class="text-gray-600">Да, мы ремонтируем компьютеры и ноутбуки. Диагностика бесплатная, ремонт от 1500 ₽ в зависимости от сложности.</p>
                     </div>
                 </div>
             </div>
@@ -772,7 +936,7 @@
                         <p>Пн–Сб: 10:00 – 20:00</p>
                         <p class="text-gray-600">Вс: выходной</p>
                         
-                        <p>Email: <a href="mailto:photo_ostov@mail.ru" class="text-accent font-bold hover:underline">photo_ostov@mail.ru</a></p>
+                        <p>Email: <a href="mailto:photo_ostrov@mail.ru" class="text-accent font-bold hover:underline">photo_ostrov@mail.ru</a></p>
                         
                         <p class="text-gray-700 font-bold">Адрес:</p>
                         <p>Московская область, рабочий посёлок Октябрьский, ул. Текстильщиков, 7А</p>
